@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.logo{
+    font-family: 'M PLUS Rounded 1c';
+}
+
+/* styles.css */
+
+.tab_wrap{
+    width:calc(100%-50px); 
+    margin:10px auto;
+}
+
+
+.tab_area{
+    font-size:0; 
+    padding:0 0;
+}
+
+.tab_area label{
+    width:110px; 
+    display:inline-block; 
+    padding:14px 0 12px; 
+    color:#fff; 
+    background:#90c9cc; 
+    text-align:center; 
+    font-size:13px; 
+    cursor:pointer; 
+    transition:ease 0.2s opacity; 
+    border-top-left-radius:10px; 
+    border-top-right-radius:10px; 
+    vertical-align:bottom; 
+    transition:ease 0.2s; 
+    margin:10px 1px 0 0;
+}
+
+.tab1_label{
+    color: blue;
+}
+
+@media (hover: hover) {
+    /* hover指定できるPCを想定したスタイル */
+    .tab_area label:hover{
+        opacity:0.5;
+    }
+    }
+
+
+.tab_panel{
+    width:100%; 
+    padding:80px 0; 
+    display:none;
+}
+
+.tab_panel p{
+    font-size:14px; 
+    letter-spacing:1px; 
+    text-align:center;
+}
+
+.panel_area{
+    background:#ffffff; 
+    border-bottom-right-radius:10px; 
+    border-bottom-left-radius:10px; 
+    
+    border-top:8px solid #d7e9ea;
+
+}
+
+.tab_panel{
+    width:100%; 
+    padding:0 0; 
+    display:none;
+    border-left: 1px #000;
+    border-bottom: 1px #000;
+    border-right: 1px #000;
+}
+
+.tab_panel p{
+    font-size:14px; 
+    letter-spacing:1px; 
+    text-align:center;
+}
+
+.tab_area label.active{
+    background:#fff; 
+    color:#000;
+}
+
+.tab_panel.active{
+    display:block;
+}
+
+
+
+input[type="radio"]{
+    display:none;
+}
+
+#tab1:checked ~ .tab_area .tab1_label{
+    background:#d7e9ea; 
+    color:#004ffa;
+    font-size: 1rem;
+    padding:14px 0 16px;
+}
+
+#tab1:checked ~ .panel_area #panel1{
+    display:block;
+}
+
+#tab2:checked ~ .tab_area .tab2_label{
+    background:#d7e9ea; 
+    color:#ff1b1b;
+    font-size: 1rem;
+    padding:14px 0 16px;
+}
+
+#tab2:checked ~ .panel_area #panel2{
+    display:block;
+}
+
+/* テーブルのスタイルを追加 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+    color: #000;
+}
+
+table th, table td {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(136, 170, 182);
+
+}
+
+/* 交互の背景色を設定
+table tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: white;
+} */
