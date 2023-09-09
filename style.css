@@ -1,20 +1,28 @@
 
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Allura');
 
 body {
     font-family: 'Ubuntu Mono', monospace;
 }
 
+/* ロゴの表現 */
+
 .logo{
-    font-family: 'M PLUS Rounded 1c';
+    font-family: 'Allura';
+    font-size: 4rem;
+    text-align: center;
 }
 
 /* styles.css */
 
 .tab_wrap{
-    width:calc(100%-50px); 
-    margin:10px auto;
+    width:calc(100% - 10px); 
+    margin:0px auto;
+
+    position: relative;
+    top: -10px;
 }
 
 
@@ -37,7 +45,7 @@ body {
     border-top-right-radius:10px; 
     vertical-align:bottom; 
     transition:ease 0.2s; 
-    margin:10px 1px 0 0;
+    margin:0px 1px 0 0;
 }
 
 .tab1_label{
