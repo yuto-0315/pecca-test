@@ -1,16 +1,11 @@
 // script.js
 
-const date1 = "2023/09/10"
-const date2 = "2023/09/10"
+const date1 = "2023/09/10";
+const date2 = "2023/09/10";
 
 // CSVデータをFetchを使用して読み込む処理
 function fetchCSVData() {
-    fetch('予定.csv',{
-        headers: {
-        'Content-Type': 'text/csv; charset=Shift_JIS'
-       }
-    })
-
+    fetch('予定.csv')
         .then(response => response.text())
         .then(data => {
             processData(data, 'table1'); // 'table1' を指定してデータ処理
@@ -22,12 +17,7 @@ function fetchCSVData() {
 
 // 新しいテーブルのための関数
 function fetchCSVData2() {
-    fetch('予定2.csv',{
-        headers: {
-        'Content-Type': 'text/csv; charset=Shift_JIS'
-       }
-    })
-
+    fetch('予定2.csv')
         .then(response => response.text())
         .then(data => {
             processData(data, 'table2'); // 'table2' を指定してデータ処理
@@ -134,23 +124,21 @@ function updateRowColors() {
     });
 }
 
-
-
-// CSVデータを処理してテーブルに表示する関数
 function processData(csvData, tableId) {
     const rows = csvData.trim().split('\n').slice(1); // ヘッダーを除いて各行を分割
     const tableBody = document.querySelector(`#${tableId} tbody`); // 対象のテーブルを選択
 
     rows.forEach(row => {
-        const [time, name] = row.split(',');
+        const [time, performer, program] = row.split(','); // 予定時刻、演奏者、演目の情報を分割
         const rowElement = document.createElement('tr');
         const timeInMinutes = convertTimeToMinutes(time);
         const timeInMilliseconds = convertMinutesToMilliseconds(timeInMinutes);
         rowElement.setAttribute('data-time', timeInMilliseconds.toString());
-        rowElement.innerHTML = `<td>${time}</td><td>${name}</td>`;
+        rowElement.innerHTML = `<td>${time}</td><td>${performer}</td><td>${program}</td>`; // 3つの列に情報を追加
         tableBody.appendChild(rowElement);
     });
 }
+
 
 
 // 初回の呼び出し

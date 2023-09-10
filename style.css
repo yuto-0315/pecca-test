@@ -8,6 +8,7 @@ body {
     background-color: #fdfdfd;
 }
 
+
 /* ロゴの表現 */
 
 .logo_area{
@@ -174,17 +175,22 @@ table {
     border-collapse: collapse;
     margin-top: 0px;
     color: #000;
+    font-family: 'Ubuntu Mono',"ヒラギノ丸ゴ ProN" ,"monospace";
 }
 
 table th, table td {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     border: 2px solid rgb(136, 170, 182);
 
 }
 
 .time{
-    width: 86px;
+    width: 4em;
+}
+
+.performer{
+    width: 6em;
 }
 
 /* ヘッダ行の下線 */

@@ -31,47 +31,7 @@
         <div class="logo_year">@2023</div>
     </div>
 
-    <div class="tab_wrap">
-        <input id="tab1" type="radio" name="tab_btn" checked>
-        <input id="tab2" type="radio" name="tab_btn">
-
-        <div class="tab_area">
-            <label class="tab1_label" for="tab1">9/9(sat)</label>
-            <label class="tab2_label" for="tab2">9/10(sun)</label>
-        </div>
-
-        <div class="panel_area">
-            <div id="panel1" class="tab_panel">
-                <!-- CSVデータを表示するテーブル1 -->
-                <table id="table1">
-                    <thead>
-                        <tr>
-                            <th class="time">予定時刻</th>
-                            <th class="program">演目</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- CSVデータがここに表示されます -->
-                    </tbody>
-                </table>
-            </div>
-            <div id="panel2" class="tab_panel">
-                <!-- CSVデータを表示するテーブル2 -->
-                <table id="table2">
-                    <thead>
-                        <tr>
-                            <th class="time">予定時刻</th>
-                            <th class="program">演目</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- CSVデータがここに表示されます -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
+    <!-- 寄付、Note -->
     <div class="design_box">
         <div class="design_box_title">
             ～note～
@@ -94,6 +54,54 @@
         <div>皆様からのご支援を心よりお待ちしております。どうぞよろしくお願いいたします。</div>
 
     </div>
+
+    <!--END 寄付、Note END-->
+
+    <!-- 表 -->
+    <div class="tab_wrap">
+        <input id="tab1" type="radio" name="tab_btn" checked>
+        <input id="tab2" type="radio" name="tab_btn">
+
+        <div class="tab_area">
+            <label class="tab1_label" for="tab1">9/9(sat)</label>
+            <label class="tab2_label" for="tab2">9/10(sun)</label>
+        </div>
+
+        <div class="panel_area">
+            <div id="panel1" class="tab_panel">
+                <!-- CSVデータを表示するテーブル1 -->
+                <table id="table1">
+                    <thead>
+                        <tr>
+                            <th class="time">予定時刻</th>
+                            <th class="performer">演奏者</th>
+                            <th class="program">演目</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- CSVデータがここに表示されます -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="panel2" class="tab_panel">
+                <!-- CSVデータを表示するテーブル2 -->
+                <table id="table2">
+                    <thead>
+                        <tr>
+                            <th class="time">予定時刻</th>
+                            <th class="performer">演奏者</th>
+                            <th class="program">演目</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- CSVデータがここに表示されます -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<!-- END　表　END -->
    
 
 </body>
