@@ -231,22 +231,6 @@ table th, table td {
     padding: 5px 10px;
 }
 
-.copyright_box{
-    margin: 2em auto;
-    padding: 2em;
-    border:1px solid #ccc ;/*線の太さ・種類・色*/
-    position: relative;
-    font-family: "Sawarabi Mincho";
-}
-
-.copyright_box_title{
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    padding: 5px 10px;
-}
 
 /* 交互の背景色を設定 */
 table tbody tr:nth-child(even) {
@@ -255,4 +239,27 @@ table tbody tr:nth-child(even) {
 
 table tbody tr:nth-child(odd) {
     background-color: white;
+}
+
+/* 著作権表記 */
+
+.copyright{
+    position: relative;
+    margin: 5px;
+    text-align: right;
+    font-size: 1em;
+}
+
+.copyright::after{
+    background-color: rgba(107, 73, 73, 0.651);
+    border: none;
+    content: '';
+    width: 360px;
+    height: 0.25em;
+    bottom: 0.25em;
+    right: 0;
+    position: absolute;
+    transform: rotate(-0.5deg);
+    border-radius: 50% 50%;
+    z-index: -1;
 }
