@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- キャッシュの非保持 -->
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
 
+    <!-- ファビコン -->
 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#f4f4f4">
+    <meta name="msapplication-TileColor" content="#f4f4f4">
+    <meta name="theme-color" content="#f4f4f4">
+
+    <!-- CSS、JSの記述 -->
     <link rel="stylesheet" href="style.css">
-    <title>CSVデータをタブで表示</title>
+    <script src="script.js"></script>
+
+    <title>ペッカトーレ@2023</title>
 </head>
 
 <body>
-
-    <div class="logo">Peccatore</div>
-
+    <div class="logo_area">
+        <div class="logo_name">Peccatore</div>
+        <div class="logo_year">@2023</div>
+    </div>
 
     <div class="tab_wrap">
         <input id="tab1" type="radio" name="tab_btn" checked>
         <input id="tab2" type="radio" name="tab_btn">
 
         <div class="tab_area">
-            <label class="tab1_label" for="tab1">11/11(sat)</label>
-            <label class="tab2_label" for="tab2">11/12(sun)</label>
+            <label class="tab1_label" for="tab1">9/9(sat)</label>
+            <label class="tab2_label" for="tab2">9/10(sun)</label>
         </div>
 
         <div class="panel_area">
@@ -32,8 +46,8 @@
                 <table id="table1">
                     <thead>
                         <tr>
-                            <th>予定時刻</th>
-                            <th>演目</th>
+                            <th class="time">予定時刻</th>
+                            <th class="program">演目</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,8 +60,8 @@
                 <table id="table2">
                     <thead>
                         <tr>
-                            <th>予定時刻</th>
-                            <th>演目</th>
+                            <th class="time">予定時刻</th>
+                            <th class="program">演目</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -57,6 +71,30 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <div class="design_box">
+        <div class="design_box_title">
+            ～note～
+        </div>
+
+        <div>予定時刻を表示しておりますが、都合により開始時刻や順番は予定より前後する場合がございます。</div>
+        <div>また、現在の状況をリアルタイムで反映しているものではございませんので、実際の状況とズレて表示される可能性がございます。</div>
+        <div>予めご了承ください。</div>
+
+    </div>
+
+    <div class="design_box">
+        <div class="design_box_title">
+            ～寄付のお願い～
+        </div>
+
+        <div>本日はPeccatore@2023にご来場いただきありがとうございます。</div>
+        <div>Peccatore@2023は多くの出演者のご協力のもと開催しております。ご協力いただいた皆様のご尽力に心から感謝申し上げます。</div>
+        <div>来年度以降もより良い演奏会を実現するために、寄付金のご支援をお願い申し上げます。皆様からの寄付金は、来年度からの活動をさらに発展させるために大切に使わせていただきます。</div>
+        <div>皆様からのご支援を心よりお待ちしております。どうぞよろしくお願いいたします。</div>
+
+    </div>
+   
+
 </body>
 </html>
