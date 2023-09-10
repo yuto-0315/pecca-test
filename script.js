@@ -1,6 +1,6 @@
 // script.js
 
-const date1 = "2023/09/10";
+const date1 = "2023/09/11";
 const date2 = "2023/09/10";
 
 // CSVデータをFetchを使用して読み込む処理
@@ -51,9 +51,7 @@ function updateRowColors() {
     // 現在の日付を取得（YYYY/MM/DD形式の文字列として）
     const currentDate = new Date().toLocaleDateString('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit' }).replace(/\//g, '/');
 
-    // table1の日付比較用の日付（date1）とtable2の日付比較用の日付（date2）を設定
-    const date1 = "2023/09/09";
-    const date2 = "2023/09/10";
+
 
     // table1用の日付比較
     const table1Rows = document.querySelectorAll('#table1 tbody tr');
