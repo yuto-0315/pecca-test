@@ -92,6 +92,13 @@ body {
     z-index: -1;
 }
 
+.sat{
+    color: #004ffa;
+}
+
+.sun{
+    color: #ff1b1b;
+}
 
 /* styles.css */
 
