@@ -107,7 +107,10 @@ body {
     margin:0px auto;
 
     position: relative;
+
+    display: none;
 }
+
 
 
 .tab_area{
